@@ -2,8 +2,12 @@ name: App With Github Actions with Docker CI/CD
 
 on:
   workflow_dispatch
+<<<<<<< HEAD
   # push:
   #   branches: [ "main" ]
+=======
+   #push
+>>>>>>> 98af4b362b6a61c56414016839ca9900e8ba18c5
 
 jobs:
   ci:

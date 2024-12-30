@@ -1,13 +1,9 @@
 name: App With Github Actions with docker-compose CI/CD
 
 on:
-<<<<<<< HEAD
-  push
-=======
   workflow_dispatch
   #push
 
->>>>>>> 98af4b362b6a61c56414016839ca9900e8ba18c5
 jobs:
   ci:
     runs-on: ubuntu-latest
@@ -28,11 +24,7 @@ jobs:
       shell: bash
       
     - name: Build with Maven
-<<<<<<< HEAD
       run: mvn -DskipTests -B package --file pom.xml
-=======
-      run: mvn Dskiptests -B package --file pom.xml
->>>>>>> 98af4b362b6a61c56414016839ca9900e8ba18c5
       
     - name: Naming jar file
       run: mv ./target/*.jar ./target/app.jar
